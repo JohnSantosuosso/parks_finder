@@ -1,5 +1,7 @@
 <h1>State Parks</h1>
 
+<h3>Total Parks: <%= @parks.count %></h3>
+
 <% @parks.each do |park| %>
 <p>Name: <%= park.name %></p>
 <p>Description: <%= park.description %></p>
