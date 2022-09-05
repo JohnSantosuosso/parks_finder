@@ -1,3 +1,8 @@
 <h1>State Parks</h1>
 
-<%= @parks%>
+<% @parks.each do |park| %>
+<p>Name: <%= park.name %></p>
+<p>Description: <%= park.description %></p>
+<p>Directions: <%= park.directions %></p>
+<p>Hours: <%= park.hours %></p>
+<% end %>
