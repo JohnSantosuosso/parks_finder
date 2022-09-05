@@ -18,6 +18,6 @@ RSpec.describe Park do
     expect(park.name).to eq("Andrew Johnson National Historic Site")
     expect(park.description).to eq("Andrew Johnson's complex presidency (1865-69) illustrates the Constitution at work")
     expect(park.directions).to eq("GPS The GPS setting for Andrew Johnson NHS may be listed as 121 Monument Ave")
-
+    expect(park.hours).to eq({:wednesday=>"All Day", :monday=>"All Day", :thursday=>"All Day", :sunday=>"All Day", :tuesday=>"All Day", :friday=>"All Day", :saturday=>"All Day"})
   end
 end
